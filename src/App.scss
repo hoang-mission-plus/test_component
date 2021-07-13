@@ -1,0 +1,22 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~@rt-commercial-engineering/rt-design-system/src/assets/scss/core.scss";
+
+.bp3-navbar {
+  display: flex;
+  align-items: center;
+  position: fixed !important;
+  justify-content: space-evenly;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.content {
+  margin-top: 100px;
+}
+.bp3-button {
+  margin-right: 24px;
+}
+
+.bp3_hover:not([class*="bp3-intent-"]):hover {
+  box-shadow: 0px 1px 1px 0px #b2b2b2, inset 0px -1px 1px 0px #b2b2b2;
+}
