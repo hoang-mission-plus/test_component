@@ -16,6 +16,16 @@ import {
 } from "@rt-commercial-engineering/rt-design-system";
 import "./App.scss";
 import { Container } from "react-bootstrap";
+import CalloutComponent from "./component/callout/callout";
+import NoneIdealStateComponent from "./component/noneIdealState/noneIdealState";
+import SpinnerComponent from "./component/spinner/spinner";
+import TreeComponent from "./component/tree/tree";
+import CollapseComponent from "./component/collapse/collapse";
+import DividerComponent from "./component/divider/divider";
+import EditTableTextComponent from "./component/editTableText/editTableText";
+import OverflowListComponent from "./component/overflowList/overflowList";
+import ProgressBarComponent from "./component/progressBar/progressBar";
+import TagComponent from "./component/tag/tag";
 const App = () => {
   const [stateStart, setStateStart] = useState(false);
   const handleStart = () => setStateStart(!stateStart);
@@ -51,7 +61,18 @@ const App = () => {
   );
   const SprintNews: React.FunctionComponent = () => (
     <div>
+      <TagComponent/>
       <Overlay />
+      <CalloutComponent />
+      <CollapseComponent />
+      <DividerComponent />
+      <NoneIdealStateComponent />
+      <EditTableTextComponent />
+      <SpinnerComponent />
+      <TreeComponent />
+      <OverflowListComponent />
+      <ProgressBarComponent />
+      
     </div>
   );
   const GameQuizz: React.FunctionComponent = () => {
